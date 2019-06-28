@@ -1,0 +1,13 @@
+Pour le déploiement (précision) :
+
+Il faut tout d'abord savoir que j'ai activé le déploiement automatique de mon projet (à partir de la branche dev, comme demandé) via l'interface graphique d'Heroku. 
+
+C'est ce qui explique que je n'ai rien qui figure sur mon fichier .travis.yml.
+
+J'ai aussi activé l'option empêchant qu'un déploiement soit réalisé si la CI détecte des erreurs (en cochant la case "Wait for CI to pass before deploy").
+
+
+
+Pour bloquer les pull requests vers master si les tests échouent (réponse à la consigne) :
+
+On peut sur le dépot Git du projet protéger une branche. Il faut aller dans l'onglet "Settings" puis sélectionner "Branches" dans le petit panneau latéral. Il est possible alors de définir des règles, notamment conditionnant la gestion des pull requests. 
